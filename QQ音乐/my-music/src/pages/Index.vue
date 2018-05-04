@@ -44,7 +44,7 @@
 </template>
 
 <script>
-//头部  loading组件
+//头部  loading组件 
 import HeaderTab from '@/components/HeaderTab';
 import Loading from '@/components/base/Loading/Loading';
 
@@ -129,7 +129,6 @@ export default{
     components:{
         HeaderTab,
         Loading
-       
     }
 }
 </script>

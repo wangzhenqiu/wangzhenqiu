@@ -2,12 +2,18 @@
   <div id="app">
  
  <router-view/>
+<MiniPlayer></MiniPlayer>
   </div>
 </template>
 
 <script>
+import MiniPlayer from '@/components/MiniPlayer';
+
 export default {
-  name: 'App'
+  name: 'App',
+   components:{
+      MiniPlayer
+    }
 }
 
 </script>
@@ -17,10 +23,12 @@ export default {
 *{
     margin:0;
     padding: 0;
+
 }
 body{
     margin:0;
     background-color: $black;
+    overflow-x:hidden;
 }
 
 

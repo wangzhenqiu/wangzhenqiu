@@ -10,13 +10,15 @@
         <div class="singer-item" v-for="(item,k) in singerList" :key="item.index">
             <h2 v-text="item.index"></h2>
             <ul>
-                <li v-for="(singer,j) in item.singer" :key="singer.Fsinger_id">
+            <router-link :to="'/singer/'+singer.Fsinger_mid" v-for="(singer,j) in item.singer" :key="singer.Fsinger_id" tag="div">
+                <li>
                     <img :src="'https://y.gtimg.cn/music/photo_new/T001R150x150M000'+ singer.Fsinger_mid
 + '.jpg?max_age=2592000'">
                     <span v-text="singer.Fsinger_name
 
 "></span>
                 </li>
+                </router-link>
             </ul>
         </div>
         </div>
@@ -62,6 +64,7 @@ export default {
         this._getOrderSingerList(data.data.list);
 
         this.scroll = new BScroll('.singer-wrapper',{
+            click:true,
             probeType:3
         });
         this.scroll.on('scroll',(pos)=>{

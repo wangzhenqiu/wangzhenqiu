@@ -5,6 +5,10 @@ import Index from '@/pages/Index'
 
 import Singer from '@/pages/Singer'
 
+import SingerDetail from '@/pages/SingerDetail'
+
+import PlaySong from '@/pages/PlaySong'
+
 Vue.use(Router)
 
 
@@ -21,6 +25,14 @@ export default new Router({
             {
               path: '/singer',
               component: Singer
+            },
+            {
+              path: '/singer/:sid',
+              component: SingerDetail
+            },
+            {
+              path: '/play/:smid/:mid',
+              component:PlaySong
             }
       ]
 })
