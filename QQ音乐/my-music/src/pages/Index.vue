@@ -22,17 +22,21 @@
                     <h2>歌曲排行榜</h2>
                 <div class="song-list">
                     <ul>
-                        <li v-for="(song,k) in topList" :k="song.data.songid">
+                    <router-link :to="'/play/'+song.data.songmid+'/'+song.data.albummid"  @click.native="addSong(song)" v-for="(song,k) in topList" :key="song.data.songid">
+                        <li>
+                        
                             <div class="thumb">
-                                <img :src="'https://y.gtimg.cn/music/photo_new/T002R90x90M000'+ song.data.albummid +'.jpg?max_age=2592000'">
+                                <img v-lazy="'https://y.gtimg.cn/music/photo_new/T002R90x90M000'+ song.data.albummid +'.jpg?max_age=2592000'">
                             </div>
                             <div class="text">
                                 <h3 v-text="song.data.songname"></h3>
                                 <span v-text="song.data.singer[0].name"></span>
                             </div>
+
                             <div class="time">{{song.data.interval | getTime}}
                             </div>
                         </li>
+                        </router-link>
                     </ul>
                 </div>
             </div>
@@ -61,7 +65,7 @@ import 'swiper/dist/css/swiper.min.css';
 //better-scroll 插件
 import BScroll from 'better-scroll';
 
-
+import {mapGetters,mapMutations} from 'vuex';
 export default{
     name:'',
         data(){
@@ -72,12 +76,18 @@ export default{
                 loadingState:true
              }
             },
+            computed:{
+              ...mapGetters([
+                'getPlayList'
+              ])  
+            },
     mounted:function(){
         this._getSlider(),
         this._getTopList()
         //实例化 better-scroll
          this.$nextTick(function(){
                 this.scroll = new BScroll('.index-wrapper',{
+                click:true,
                 pullUpLoad:{
                     threshold:50
                 }
@@ -107,14 +117,42 @@ export default{
             });
         });
     },
-    _getTopList(){
-        let songBegin = this.topList.length;
-        let url = api.topListApi + songBegin;
-        jsonp(url,{param:'jsonpCallback'},(err,data)=>{
-            this.topList = this.topList.concat(data.songlist);
-            this.loadingState = false;
-        });
-    }
+        _getTopList(){
+            let songBegin = this.topList.length;
+            let url = api.topListApi + songBegin;
+            jsonp(url,{param:'jsonpCallback'},(err,data)=>{
+                this.topList = this.topList.concat(data.songlist);
+                this.loadingState = false;
+            });
+        },
+        addSong(song){
+              song = {musicData:song};
+              this.setCurSong(song);
+
+            
+              //防止添加
+              let listArr = this.getPlayList;
+              let numFlag = 0;
+              listArr.forEach((item,i)=>{
+                if(song.musicData.songid == item.musicData.songid){
+                  numFlag++;
+                }
+              });
+
+
+              if(numFlag <= 0){
+                this.setCurSongIndex(listArr.length);
+                this.setPlayList(song);
+
+              }
+              
+            },
+            ...mapMutations({
+              'setCurSong':'setCurSong',
+              'setPlayList':'setPlayList',
+              'setCurSongIndex':'setCurSongIndex'
+            })
+        
     },
     filters:{
         getTime:function(t){

@@ -12,7 +12,7 @@
             <ul>
             <router-link :to="'/singer/'+singer.Fsinger_mid" v-for="(singer,j) in item.singer" :key="singer.Fsinger_id" tag="div">
                 <li>
-                    <img :src="'https://y.gtimg.cn/music/photo_new/T001R150x150M000'+ singer.Fsinger_mid
+                    <img v-lazy="'https://y.gtimg.cn/music/photo_new/T001R150x150M000'+ singer.Fsinger_mid
 + '.jpg?max_age=2592000'">
                     <span v-text="singer.Fsinger_name
 
@@ -23,9 +23,9 @@
         </div>
         </div>
     </div>
-        <div class="index-tool">
+        <div class="index-tool"  @click='_getIndex()'>
             <ul>
-                <li v-for="(index,k) in indexTool" :class="{active:curIndex == k}" :kye="k">{{index}}</li>
+                <li v-for="(index,k) in indexTool" :class="{active:curIndex == k}" :kye="k" >{{index}}</li>
             </ul>
         </div>
     </div>
@@ -100,7 +100,6 @@ export default {
     
                 data.forEach((singer,k)=>{
                     if(singer.Findex === curIndex){
-
                         temp.singer.push(singer);
                         data.splice(k,1);
                     }
@@ -109,12 +108,16 @@ export default {
             }
 
             //清楚无singer
+            let tempSingerList = [];
+            let tempIndexTool = [];
             this.singerList.map((item,k)=>{
-                if(item.singer.length<=0){
-                    this.singerList.splice(k,1);
-                    this.indexTool.splice(k,1);
+                if(item.singer.length>0){
+                    tempSingerList.push(item);
+                    tempIndexTool.push(item.index);
                 }
             })
+             this.singerList = tempSingerList;
+             this.indexTool = tempIndexTool;
         },
         //index 歌曲索引
         _getIndexTool(){
@@ -123,9 +126,8 @@ export default {
                 indexArr.push(String.fromCharCode(code));
              }
              this.indexTool = indexArr;
-             // console.log(indexArr);
         },
-        // 
+        // 歌曲列表高度
         _getDistance(){
             let singerItemNode = document.querySelectorAll('.singer-item');
             let offset = 0;
@@ -134,8 +136,8 @@ export default {
             this.singerList[i].distance = offset;
            })
            
-           }
-        
+           },
+         
 
     },
     components:{

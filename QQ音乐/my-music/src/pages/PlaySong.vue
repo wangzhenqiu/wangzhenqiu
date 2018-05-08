@@ -55,7 +55,11 @@ export default {
             ])
     },
     mounted(){
-        this._getData()
+
+      this.smid = this.$route.params.smid;
+      this.mid = this.$route.params.mid;
+
+        this._getData(this.smid,this.mid);
     },
    methods:{
         back(){
@@ -72,7 +76,7 @@ export default {
             }else{//暂停
                 audioNode.pause();
                 opBtnNode.setAttribute('class','playPause play');
-                thumb.style.animationPlayState = 'pause'
+                thumb.style.animationPlayState = 'paused'
             }
             this.setPlayState(!this.getPlayState);
         },
@@ -85,6 +89,7 @@ export default {
 
             this.setCurSongIndex(prevIndex);
             this.setCurSong(this.getPlayList[prevIndex]);
+
             let songData = this.getPlayList[prevIndex].musicData;
             this._getData(songData.songmid,songData.albummid);
             },

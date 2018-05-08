@@ -64,6 +64,7 @@ export default {
         modifyPlayInfo(song,i){
             this.setCurSong(song);
             this.setCurSongIndex(i);
+            console.log(this.setCurSongIndex);
         },
         ...mapMutations({
             'setCurSongIndex':'setCurSongIndex',
