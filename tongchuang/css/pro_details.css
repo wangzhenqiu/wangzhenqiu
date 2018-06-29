@@ -8,9 +8,9 @@ margin-left:64px;margin-bottom: 14px}
 .product .content #menu ul li a{font-size:24px;font-family:微软雅黑;
 color:#686360;display:block;height:46px;margin-top:20px;margin-bottom:12px;}
 .product .content #menu ul li:hover a{color:#e73754;
-	background:url(../images/pro_pn5.png) 30px 26px no-repeat;}
+	background:url(../images/pro_pn5.png) 32px 28px no-repeat;}
 .product .content #menu ul li.on a{color:#e73754;
-	background:url(../images/pro_pn5.png) 30px 26px no-repeat;}
+	background:url(../images/pro_pn5.png) 32px 28px no-repeat;}
 .product .content #menu ul li{display:inline-block;text-align:center;
 	width:104px;margin:48px 95px 0 95px;cursor:pointer;}
 .product .content{width:1200px;margin:0 auto;}

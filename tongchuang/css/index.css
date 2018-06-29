@@ -8,9 +8,9 @@ font-weight:normal;}
 .product .bg .content #menu ul li a{font-size:24px;font-family:微软雅黑;
 color:#686360;display:block;height:46px;margin-top:20px;margin-bottom:12px;}
 .product .bg .content #menu ul li:hover a{color:#e73754;
-	background:url(../images/pro_pn5.png) 30px 26px no-repeat;}
+	background:url(../images/pro_pn5.png) 32px 28px no-repeat;}
 .product .bg .content #menu ul li.on a{color:#e73754;
-	background:url(../images/pro_pn5.png) 30px 26px no-repeat;}
+	background:url(../images/pro_pn5.png) 32px 28px no-repeat;}
 
 .product .bg .content #menu ul li:first-child i{background:url(../images/pro_pn1.png) no-repeat;background-position: center center;}
 .product .bg .content #menu ul li:first-child:hover i{background:url(../images/pro_pn11.png) no-repeat;background-position: center center;}
