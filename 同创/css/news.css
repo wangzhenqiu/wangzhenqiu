@@ -1,0 +1,49 @@
+.news{width:1200px;margin:66px auto 0;}
+.news .menu h3{text-align: center;font-size:36px;font-family: 微软雅黑;
+color:#333;font-weight: normal;margin-top:44px;}
+.news .menu h3:before{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-right:64px;margin-bottom: 14px}
+.news .menu h3:after{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-left:64px;margin-bottom: 14px}
+.news .menu ol{width:898px;margin:44px auto 68px;}
+.news .menu ol li{display:inline-block;}
+.news .menu ol li a{margin:0 112px;font-size:18px;
+font-family: 微软雅黑;color:#333;}
+.news .menu ol li a.on{color:#db2e2e;}
+.news .menu ol li a:hover{color:#db2e2e;cursor:pointer;}
+
+.news .content{width:1144px;margin:0px auto;}
+.news .content ul li{margin-top:26px;overflow: hidden;clear:both;}
+.news .content ul li:first-child{margin-top:0px;}
+.news .content ul li img{float:left;}
+.news .content ul li .text{float:right; width:708px;}
+.news .content ul li .text h2 {display:inline-block;margin-bottom: 18px;}
+.news .content ul li .text h2 a{font-size:18px;font-family: 微软雅黑;
+color:#000;font-weight: normal;}
+.news .content ul li:hover .text h2 a{color:#fe4a49;}
+.news .content ul li:hover {cursor: pointer;}
+.news .content ul li .text span{float:right;font-size:16px;font-family: 微软雅黑;
+color:#000;}
+.news .content ul li .text p{font-size:16px;font-family: 微软雅黑;
+color:#000;text-indent:2em;line-height:22px;}
+
+
+
+
+.news .page{width:640px;margin:86px auto 78px;clear:both;overflow: hidden;}
+.news .page a{font-size:18px;font-family: 微软雅黑;color:#fefefe;
+display:inline-block;background:#959595;text-align:center;
+min-width:40px;line-height:40px;margin:0px 20px;}
+.news .page a:hover{background:#e41c3d;}
+.news .page .top,.news .page .bottom{padding:0px 20px;}
+.news .page .top:hover,.news .page .bottom:hover{background:#959595;}
+.news .page a.on{background:#e41c3d;}
+.news .page form{display:inline-block;border:3px solid #959595;}
+.news .page form input{width:60px;line-height:36px;height:36px;vertical-align: top;
+	outline:none;border: none;font-size:18px;font-family: 微软雅黑;color:#000;}
+.news .page form button{width:40px;line-height:36px;height:36px;
+	font-size:18px;font-family: 微软雅黑;color:#fefefe;border:none;
+background:#959595;outline:none;}
+
+
+

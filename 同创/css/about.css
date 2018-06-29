@@ -1,0 +1,33 @@
+.about{width:100%;background:url(../images/About1.jpg);min-height:1515px;}
+.about .menu{width:914px;margin:0 auto;}
+.about .menu h3{font-size:36px;font-family: 微软雅黑;
+color:#333;font-weight: normal;margin:86px auto 23px;display:inline-block;}
+.about .menu h3:before{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-right:64px;margin-bottom: 14px}
+.about .menu h3:after{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-left:64px;margin-bottom: 14px}
+.about .menu ul{width:898px;margin:0 auto;}
+.about .menu ul li{display:inline-block;}
+.about .menu ul li a{margin:0 112px;font-size:18px;
+font-family: 微软雅黑;color:#333;}
+.about .menu ul li a.on{color:#db2e2e;}
+.about .menu ul li a:hover{color:#db2e2e;cursor:pointer;}
+
+.about .content{width:824px;margin:26px auto 0;clear:both;overflow:hidden;}
+.about .content h4{font-size:24px;font-family: 微软雅黑;
+	color:#ac531d;font-weight: normal
+	;margin-bottom:62px;}
+.about .content p{line-height: 28px;font-size:18px;
+	font-family: 微软雅黑;color:#000;text-indent:2em;margin-bottom: 24px}
+
+
+
+
+
+
+
+
+
+
+
+

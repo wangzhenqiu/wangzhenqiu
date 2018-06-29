@@ -1,0 +1,49 @@
+.product h2{margin:76px 0 22px 0;text-align: center;
+	font-size:36px;font-family: 微软雅黑;color:#333;
+font-weight:normal;}
+.product h2:before{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-right:64px;margin-bottom: 14px}
+.product h2:after{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-left:64px;margin-bottom: 14px}
+.product .content {width:1200px;margin:0 auto;}
+.product .content ul{margin-bottom:60px;}
+.product .content ul li{display:inline-block;
+text-align:center;width:104px;margin:48px 95px 0 95px;
+}
+.product .content  ul li span{font-size:24px;font-family:微软雅黑;
+color:#686360;display:block;height:46px;margin-top:20px;}
+.product .content  ul li:hover span{color:#e73754;
+	background:url(../images/pro_pn5.png) 30px 26px no-repeat;}
+.product .content  ul i{width: 74px;height:61px;display: block;margin:0 auto;}
+.product .content  ul .timber i{background:url(../images/pro_pn1.png) no-repeat;background-position: center center;}
+.product .content  ul .cabinet  i{background:url(../images/pro_pn2.png) no-repeat;background-position: center center;}
+.product .content  ul .wardrobe  i{background:url(../images/pro_pn3.png) no-repeat;background-position: center center;}
+.product .content  ul .chairs i{background:url(../images/pro_pn4.png) no-repeat;background-position: center center;}
+.product .content  ul .timber:hover i{background:url(../images/pro_pn11.png) no-repeat;background-position: center center;
+}
+.product .content  ul .cabinet:hover  i{background:url(../images/pro_pn22.png) no-repeat;background-position: center center;}
+.product .content  ul .wardrobe:hover  i{background:url(../images/pro_pn33.png) no-repeat;background-position: center center;}
+.product .content  ul .chairs:hover  i{background:url(../images/pro_pn44.png) no-repeat;background-position: center center;}
+.product .content  ul .cabinet i{background:url(../images/pro_pn22.png) no-repeat;background-position: center center;}
+.product .content  ul .cabinet span{color:#e73754;
+	background:url(../images/pro_pn5.png) 30px 26px no-repeat;}
+
+.product .content img{display:block;margin:64px auto 0;}
+.product .content .text h3{font-size:24px;font-family: 微软雅黑;
+	font-weight: normal;color:#333;margin-bottom:22px;}
+.product .content .text{width:910px;margin-bottom:38px;margin-left:78px;}
+.product .content .text p{text-indent:2em;font-size:16px;
+	font-family: 微软雅黑;color:#000;line-height:32px;}
+.product .content .text div{line-height:30px;}
+
+
+
+
+
+
+
+
+
+
+
+

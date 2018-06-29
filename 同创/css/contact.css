@@ -1,0 +1,47 @@
+h3{font-size:36px;font-family: 微软雅黑;text-align: center;
+color:#333;font-weight: normal;margin:90px 0 62px 0;}
+h3:before{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-right:64px;margin-bottom: 14px}
+h3:after{content:'';border-top:1px solid #000;width:315px;display: inline-block;
+margin-left:64px;margin-bottom: 14px}
+
+.content{width:1200px;clear:both;overflow:hidden;margin:0px auto 132px;}
+.content form{width:533px; float:left;margin-left:26px;}
+.content form span{font-size:16px;font-family: 微软雅黑;
+color:#000;margin-bottom:14px;display:inline-block;}
+.content form>input{width:533px;line-height:40px;font-size:16px;font-family: 微软雅黑;
+color:#000;border:1px solid #000;margin-bottom:14px;height:40px;}
+.content form textarea{resize:none;vertical-align: top;outline: none;
+width:533px;height:70px;border:1px solid #000;font-size:16px;font-family: 微软雅黑;
+color:#000;overflow: hidden;padding:0px 6px;margin-bottom:12px;}
+.content form .bottom input:first-child{width:120px;line-height:40px;height:40px;
+margin-right:12px;font-size:16px;font-family: 微软雅黑;
+color:#000;border:1px solid #000}
+.content form .bottom img{vertical-align: middle;cursor:pointer;}
+.content form .bottom a{font-size:14px;font-family: 微软雅黑;
+color:#fff;display:inline-block;width:45px;height:24px;line-height:24px;
+background:#808080;text-align:center;margin-left:6px;vertical-align:middle;}
+
+.content form .bottom button{font-size:24px;font-family: 微软雅黑;line-height:40px;
+color:#fefbfb;width:180px;height:40px;background:#ff0000;border:none;outline:none;
+margin-left:22px;vertical-align:middle;cursor:pointer;}
+
+ html,body{margin:0;padding:0;}
+ .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+ .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+.content #dituContent {width:600px;height:550px;border:#ccc solid 1px;float:right;}
+
+
+.search h5{font-size:30px;font-family: 微软雅黑;font-weight: normal;color:#333;
+margin-top:78px;text-align:center;}
+.search>p{font-size:14px;font-family: 宋体;font-weight: normal;color:#333;
+text-align:center;margin-top:20px;}
+.search ul{margin:70px auto 48px;width:1030px;}
+.search ul li{margin-left:290px;display:inline-block;}
+.search ul li:first-child{margin-left:0px;}
+.search ul li img{vertical-align: top;}
+.search ul li .text{display: inline-block;margin-left:12px;width:74px;
+	margin-top:6px;}
+.search ul li .text p{font-size:18px;font-family: 微软雅黑;color:#333;
+	margin-bottom:1px;}
+.search ul li .text a{font-size:14px;font-family: 微软雅黑;color:#333;}
